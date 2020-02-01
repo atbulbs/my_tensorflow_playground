@@ -1,0 +1,35 @@
+{
+  "name": "my_tensorflow_playground",
+  "version": "1.0.0",
+  "description": "tensorflow.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --inline --progress --config webpack.config.js",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atbulbs/my_tensorflow_playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atbulbs/my_tensorflow_playground/issues"
+  },
+  "homepage": "https://github.com/atbulbs/my_tensorflow_playground#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.5.2",
+    "@tensorflow/tfjs-vis": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^4.0.0-beta.11",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.2"
+  }
+}
