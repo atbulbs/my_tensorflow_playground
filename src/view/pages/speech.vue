@@ -51,7 +51,8 @@ export default class SpeechComponent extends Vue {
 		// https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
 		recognizer.listen(
 			result => {
-				const { scores } = result
+        const { scores } = result
+        console.warn('scores', scores)
 				const maxValue = Math.max(...(<Array<any>>scores))
 				this.currentIndex = (<Array<any>>scores).indexOf(maxValue)
 				return Promise.resolve()

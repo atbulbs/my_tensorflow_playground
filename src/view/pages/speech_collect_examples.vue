@@ -9,7 +9,7 @@
     button(@click="train") 训练
     <br/>
     span 录音开关
-    my-switch(class="switch" :isOpen="isRecording" @onSwitch="handleSwitch")
+    my-switch(class="switch" :isOpen="isRecording" @onSwitch="handleSwitch" :canOpen="true")
     <br/>
     span {{ result }}
 </template>

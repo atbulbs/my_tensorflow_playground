@@ -100,6 +100,7 @@ export default class SpeechComponent extends Vue {
           const maxValue = Math.max(...(<Array<any>>scores))
           const index= (<Array<any>>scores).indexOf(maxValue)
           const labels = this.transferRecognizer.wordLabels()
+          console.warn('labels', labels)
           console.log(labels[index])
           this.result = ''
           setTimeout(() => {
