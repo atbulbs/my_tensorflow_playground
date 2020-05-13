@@ -21,7 +21,7 @@
 
 <script lang="ts">
 /**
- * @description 使用预训练模型创建迁移学习器, 并产生自定义训练数据
+ * @description 使用自己的数据集训练模型并进行语音识别
  */
 
 import * as tf from '@tensorflow/tfjs'
